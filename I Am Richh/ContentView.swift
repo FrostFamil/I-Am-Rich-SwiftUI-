@@ -10,12 +10,18 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color(red: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/, green: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/, blue: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/)
-            Text("I Am Rich")
-                .font(.system(size: 40))
-                .fontWeight(.bold)
-                .foregroundColor(Color.white)
-                .padding()
+            Color(.systemTeal).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            VStack {
+                Text("I Am Rich")
+                    .font(.system(size: 40))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.white)
+                    .padding()
+                Image("diamond")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            }
         }
     }
 }
