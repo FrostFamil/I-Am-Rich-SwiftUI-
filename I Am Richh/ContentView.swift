@@ -9,8 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("I Am Rich")
-            .padding()
+        ZStack {
+            Color(red: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/, green: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/, blue: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/)
+            Text("I Am Rich")
+                .font(.system(size: 40))
+                .fontWeight(.bold)
+                .foregroundColor(Color.white)
+                .padding()
+        }
     }
 }
 
